@@ -2,7 +2,10 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "Firts project of mine",
-  "main": "index.js",
+  "bin": {
+  "brain-games": "bin/brain-games.js"
+  },
+"main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,7 +19,4 @@
     "url": "https://github.com/0chra/frontend-project-44/issues"
   },
   "homepage": "https://github.com/0chra/frontend-project-44#readme"
-  },
-  "bin": {
-  "brain-games": "bin/brain-games.js"
 }
