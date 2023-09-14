@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Firts project of mine",
   "bin": {
-  "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js"
   },
-"main": "index.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,5 +18,13 @@
   "bugs": {
     "url": "https://github.com/0chra/frontend-project-44/issues"
   },
-  "homepage": "https://github.com/0chra/frontend-project-44#readme"
+  "homepage": "https://github.com/0chra/frontend-project-44#readme",
+  "dependencies": {
+    "readline-sync": "git+https://github.com/anseki/readline-sync.git"
+  },
+  "devDependencies": {
+    "eslint": "^8.49.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.28.1"
+  }
 }
