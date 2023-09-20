@@ -6,3 +6,5 @@ brain-games:
 	node bin/brain-games.js
 lint:
 	npx lint
+brain-even:
+	node bin/brain-even.js
