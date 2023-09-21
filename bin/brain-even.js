@@ -4,7 +4,8 @@ do {
                 return Math.floor(Math.random() * (max - min + 1)) + min;
         };
         let i = 0;
-        console.log('Question: ${number(1, 100)}');
+        let numbers = number(1, 100);
+        console.log('Question: ${numbers}');
         let readlineSync = require('readline-sync');
         let answer = readlineSync.question('Your answer: '); 
     if (number % 2 === 0 && answer === 'yes'){
