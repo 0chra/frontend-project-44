@@ -14,7 +14,7 @@ do {
         i+= 1;
         console.log('Correct!');
 } else {
-        const  trueAnswer = answer === 'no' ?? 'Yes' : 'no';
+        const  trueAnswer = answer === 'no' ? 'Yes' : 'no';
         return (answer + 'is wrong answer ;(. Correct answer was ${trueAnswer}. Lets try again, ${userName}!');
 }
 } while (i < 3);
