@@ -4,7 +4,7 @@ function number(min, max){
 };
 let i = 0;
 do {
-        console.log('Question: ${number[1, 100]}');
+        console.log('Question:' + number(1, 100));
         let readlineSync = require('readline-sync');
         let answer = readlineSync.question('Your answer: '); 
     if (number % 2 === 0 && answer === 'yes'){
@@ -15,9 +15,9 @@ do {
         console.log('Correct!');
 } else {
         const  trueAnswer = answer === 'no' ? 'Yes' : 'no';
-        return ('answer is wrong answer ;(. Correct answer was ${trueAnswer}. Lets try again, ${userName}!');
+        return console.log(answer + 'is wrong answer ;(. Correct answer was' + trueAnswer +'. Lets try again,' + userName + '!');
 }
 } while (i < 3);
 if (i = 3){
-console.log ('Congratulations, + ${userName}');
+        console.log ('Congratulations,' + userName);
 };
