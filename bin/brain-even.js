@@ -3,7 +3,7 @@ var readlineSync = require('readline-sync');
 var userName = readlineSync.question('May I have your name? ');
 console.log('Hi, ' + userName + '!');
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
-function number(min, max){
+export function number(min, max){
         return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 let i = 0;
