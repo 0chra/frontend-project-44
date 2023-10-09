@@ -24,7 +24,7 @@ do {
       }
     const correctAnswer = nod(numbers1, numbers2);
     if (userAnswer === correctAnswer.toString()){
-        console.log('Correct!')
+        console.log('Correct!');
         i+= 1;
     } else {
         return console.log(userAnswer + ' is wrong answer ;(. Correct answer was ' + correctAnswer +'. Lets try again, ' + userName + '!')
