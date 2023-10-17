@@ -38,7 +38,7 @@ do {
     if (userAnswer === correctAnswer.toString()){
         console.log('Correct!');
     } else {
-        console.log(userAnswer + ' is wrong answer ;(. Correct answer was ' + correctAnswer +'. Lets try again, ' + userName + '!');
+        console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}. \nLets try again,${userName}!`);
         return;
     }
 } while (i < 3);

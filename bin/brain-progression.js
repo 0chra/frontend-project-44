@@ -1,5 +1,4 @@
 console.log('Welcome to the Brain Games');
-const { first } = require('lodash');
 const readlineSync = require('readline-sync');
 const userName = readlineSync.question('May I have your name? ');
 console.log('Hello, ' + userName + '!');
@@ -34,7 +33,7 @@ do  {
     return;
   }
 }while (k < 3);
-if (i = 3){
+if (k = 3){
   console.log ('Congratulations, ' + userName + '!');
 }
 
