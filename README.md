@@ -3,3 +3,4 @@
 Brain-even: https://asciinema.org/a/cjtxvk7u5be9xgoMElHfGe0St
 Brain-calc: https://asciinema.org/a/HGc76OZYtn79fIiqkmVVbcM2p
 Brain-gcd: https://asciinema.org/a/yXeOrqbwdR7EuZ0GCjscMWwpU
+Brain-progression: https://asciinema.org/a/d8qE1ahR763zp8HxdKRZMxqeQ
