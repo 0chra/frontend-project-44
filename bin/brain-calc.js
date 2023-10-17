@@ -18,7 +18,7 @@ do {
     const numbers2 = number(1, 100);
     const symbol = randomSymbols(symbols);
     console.log(`Question: ${numbers1} ${symbol} ${numbers2}`);
-    const userAnswer = readlineSync.question('');
+    const userAnswer = readlineSync.question('Your answer: ');
     switch (symbol){
         case '-':
             correctAnswer = numbers1 - numbers2;
@@ -38,7 +38,8 @@ do {
     if (userAnswer === correctAnswer.toString()){
         console.log('Correct!');
     } else {
-        return console.log(userAnswer + ' is wrong answer ;(. Correct answer was ' + correctAnswer +'. Lets try again, ' + userName + '!')
+        console.log(userAnswer + ' is wrong answer ;(. Correct answer was ' + correctAnswer +'. Lets try again, ' + userName + '!');
+        return;
     }
 } while (i < 3);
 if (i = 3){

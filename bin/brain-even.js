@@ -1,6 +1,6 @@
 console.log('Welcome to the Brain Games');
-var readlineSync = require('readline-sync');
-var userName = readlineSync.question('May I have your name? ');
+const readlineSync = require('readline-sync');
+const userName = readlineSync.question('May I have your name? ');
 console.log('Hi, ' + userName + '!');
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 export function number(min, max){
