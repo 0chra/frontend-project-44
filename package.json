@@ -1,6 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
+  "type": "module",
   "description": "Firts project of mine",
   "bin": {
     "brain-games": "bin/brain-games.js",
@@ -15,7 +16,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "module",
+    "type": "git",
     "url": "git+https://github.com/0chra/frontend-project-44.git"
   },
   "author": "",
