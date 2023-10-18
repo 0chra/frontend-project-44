@@ -1,3 +1,4 @@
+let pointsForCycle = 0;
 console.log('Welcome to the Brain Games');
 const readlineSync = require('readline-sync');
 const userName = readlineSync.question('May I have your name? ');
@@ -6,7 +7,6 @@ console.log('What is the result of the expression?');
 function number(min, max){
   return Math.floor(Math.random() * (max - min + 1)) + min;
 };
-let k = 0;
 do  {
   const arrayLenght = number(5, 10);
   const firstNumber = number(1, 100);
@@ -27,13 +27,13 @@ do  {
   const userAnswer = readlineSync.question('Your answer: ');
   if (userAnswer === hiddenObj.toString()){
     console.log('Correct!');
-    k+=1;
+    pointsForCycle+=1;
   } else {
     console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${hiddenObj}. \nLets try again, ${userName}!`);
     return;
   }
-}while (k < 3);
-if (k = 3){
+}while (pointsForCycle < 3);
+if (pointsForCycle = 3){
   console.log ('Congratulations, ' + userName + '!');
 }
 

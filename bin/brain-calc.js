@@ -1,3 +1,4 @@
+let pointsForCycle = 0;
 console.log('Welcome to the Brain Games');
 const readlineSync = require('readline-sync');
 const userName = readlineSync.question('May I have your name? ');
@@ -12,7 +13,6 @@ function randomSymbols(symb) {
     return item;
 };
 const symbols = ['-', '+', '*'];
-let i = 0;
 do {
     const numbers1 = number(1, 100);
     const numbers2 = number(1, 100);
@@ -22,15 +22,15 @@ do {
     switch (symbol){
         case '-':
             correctAnswer = numbers1 - numbers2;
-            i+=1;
+            pointsForCycle+=1;
         break;
         case '+':
             correctAnswer = numbers1 + numbers2;
-            i+=1;
+            pointsForCycle+=1;
         break;
         case '*':
             correctAnswer = numbers1 * numbers2;
-            i+=1;
+            pointsForCycle+=1;
         break;
         default:
             break;
@@ -41,7 +41,7 @@ do {
         console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}. \nLets try again,${userName}!`);
         return;
     }
-} while (i < 3);
-if (i = 3){
+} while (pointsForCycle < 3);
+if (pointsForCycle = 3){
     console.log ('Congratulations, ' + userName + '!');
 }
