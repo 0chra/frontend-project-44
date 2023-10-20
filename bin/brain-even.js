@@ -18,7 +18,7 @@ if (numbers % 2 === 0 && userAnswer === 'yes'){
         console.log('Correct!');
 } else {
         const trueAnswer = userAnswer === 'no' ? 'yes' : 'no';
-        console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${trueAnswer}'. \nLets try again,${userName}!`);
+        console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${trueAnswer}'. \nLets try again, ${userName}!`);
         break;
 }
 } while (pointsForCycle < 3);
