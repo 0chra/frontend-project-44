@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import readlineSync from 'readline-sync';
 import {number} from './system_functions/functionofRandom.js'
 let pointsForCycle = 0;
@@ -10,7 +11,7 @@ console.log('Answer "yes" if the number is even, otherwise answer "no".');
         console.log('Question:' + numbers);
         let userAnswer = readlineSync.question('Your answer: '); 
 if (numbers % 2 === 0 && userAnswer === 'yes'){
-        pointsForCycle+= 1;    
+        pointsForCycle+= 1;
         console.log('Correct!');
 } else if (numbers % 2 !== 0 && userAnswer === 'no'){
         pointsForCycle+= 1;
