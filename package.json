@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/0chra/frontend-project-44#readme",
   "dependencies": {
-    "readline-sync": "git+https://github.com/anseki/readline-sync.git"
+    "readline-sync": "^1.4.10"
   },
   "devDependencies": {
     "eslint": "^8.49.0",
