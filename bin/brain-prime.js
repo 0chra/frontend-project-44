@@ -3,7 +3,7 @@ import {number} from './system_functions/functionofRandom.js'
 import { isPrime } from './system_functions/functionIsPrime.js';
 let pointsForCycle = 0;
 let correctAnswer = 0;
-console.log('Welcome to the Brain Games');
+console.log('Welcome to the Brain Games!');
 const userName = readlineSync.question('May I have your name? ');
 console.log('Hello, ' + userName + '!');
 console.log('Answer "yes" if given number is prime. Otherwise answer "no".');

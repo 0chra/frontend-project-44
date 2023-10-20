@@ -3,7 +3,7 @@ import {number} from './system_functions/functionofRandom.js';
 import { randomSymbols } from './system_functions/functionRandomSymblos';
 let pointsForCycle = 0;
 let correctAnswer = 0;
-console.log('Welcome to the Brain Games');
+console.log('Welcome to the Brain Games!');
 const userName = readlineSync.question('May I have your name? ');
 console.log('Hello, ' + userName + '!');
 console.log('What is the result of the expression?');
