@@ -8,7 +8,7 @@ console.log('Hello, ' + userName + '!');
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
         do {
         const numbers = number(1, 100);
-        console.log('Question:' + numbers);
+        console.log('Question: ' + numbers);
         let userAnswer = readlineSync.question('Your answer: '); 
 if (numbers % 2 === 0 && userAnswer === 'yes'){
         pointsForCycle+= 1;
