@@ -28,7 +28,7 @@ do  {
     console.log('Correct!');
     pointsForCycle+=1;
   } else {
-    console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${hiddenObj}'. \nLets try again, ${userName}!`);
+    console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${hiddenObj}'. \nLet's try again, ${userName}!`);
     break;
   }
 }while (pointsForCycle < 3);
