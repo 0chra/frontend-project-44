@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
 import {number} from './system_functions/functionofRandom.js';
-import { randomSymbols } from './system_functions/functionRandomSymblos';
+import { randomSymbols } from './system_functions/functionRandomSymblos.js';
 let pointsForCycle = 0;
 let correctAnswer = 0;
 console.log('Welcome to the Brain Games!');
