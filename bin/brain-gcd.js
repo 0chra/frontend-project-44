@@ -2,6 +2,9 @@
 import readlineSync from 'readline-sync';
 import {number} from './system_functions/functionofRandom.js'
 let pointsForCycle = 0;
+let pointsForNOD = 0;
+let pointsForNODComparison = 0;
+let pointsForFor = 0;
 console.log('Welcome to the Brain Games!');
 const userName = readlineSync.question('May I have your name? ');
 console.log('Hello, ' + userName + '!');
@@ -12,14 +15,14 @@ do {
     console.log(`Question: ${numbers1} ${numbers2}`);
     const userAnswer = readlineSync.question('Your answer: ');
     function nod () {
-        for (let x = arguments[0], i = 1; i < arguments.length; i++) {
-          let y = arguments[i];
-          while (x && y) {
-            x > y ? x %= y : y %= x;
+        for (pointsForNOD = arguments[0], pointsForFor = 1; pointsForFor < arguments.length; pointsForFor++) {
+          let pointsForNODComparison = arguments[pointsForFor];
+          while (pointsForNOD && pointsForNODComparison) {
+            pointsForNOD > pointsForNODComparison ? pointsForNOD %= pointsForNODComparison : pointsForNODComparison %= pointsForNOD;
           }
-          x += y;
+          pointsForNOD += pointsForNODComparison;
         }
-        return x;
+        return pointsForNOD;
       }
     const correctAnswer = nod(numbers1, numbers2);
     if (userAnswer === correctAnswer.toString()){
