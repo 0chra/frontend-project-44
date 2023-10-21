@@ -22,7 +22,7 @@ do  {
   const index = Math.abs(arrayLenght - number (1, 9));
   const hiddenObj = arr[index];
   arr[index] = "..";
-  console.log(String(arr.join(' ')));
+  console.log('Question: ' + String(arr.join(' ')));
   const userAnswer = readlineSync.question('Your answer: ');
   if (userAnswer === hiddenObj.toString()){
     console.log('Correct!');
