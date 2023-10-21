@@ -5,7 +5,7 @@ let pointsForCycle = 0;
 console.log('Welcome to the Brain Games!');
 const userName = readlineSync.question('May I have your name? ');
 console.log('Hello, ' + userName + '!');
-console.log('What is the result of the expression?');
+console.log('What number is missing in the progression?');
 do  {
   const arrayLenght = number(5, 10);
   const firstNumber = number(1, 100);
