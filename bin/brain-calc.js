@@ -18,7 +18,6 @@ do {
     switch (symbol){
         case '-':
             correctAnswer = numbers1 - numbers2;
-
         break;
         case '+':
             correctAnswer = numbers1 + numbers2;
