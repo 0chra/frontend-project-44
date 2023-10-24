@@ -17,17 +17,17 @@ do {
   console.log(`Question: ${numbers1} ${symbol} ${numbers2}`);
   const userAnswer = readlineSync.question('Your answer: ');
   switch (symbol) {
-  case '-':
-    correctAnswer = numbers1 - numbers2;
-    break;
-  case '+':
-    correctAnswer = numbers1 + numbers2;
-    break;
-  case '*':
-    correctAnswer = numbers1 * numbers2;
-    break;
-  default:
-    break;
+    case '-':
+      correctAnswer = numbers1 - numbers2;
+      break;
+    case '+':
+      correctAnswer = numbers1 + numbers2;
+      break;
+    case '*':
+      correctAnswer = numbers1 * numbers2;
+      break;
+    default:
+      break;
   }
   if (userAnswer === correctAnswer.toString()) {
     console.log('Correct!');
@@ -37,6 +37,6 @@ do {
     break;
   }
 } while (pointsForCycle < 3);
-if (pointsForCycle === 3){
-  console.log ('Congratulations, ' + userName + '!');
+if (pointsForCycle === 3) {
+  console.log(`Congratulations, ${userName}!`);
 }

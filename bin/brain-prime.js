@@ -9,10 +9,10 @@ console.log('Welcome to the Brain Games!');
 const userName = readlineSync.question('May I have your name? ');
 console.log(`Hello, ${userName}!`);
 console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
-do{
+do {
   const primeNumber = number(1, 100);
-  console.log (`Question: ${primeNumber}`);
-  if (!isPrime(primeNumber)){
+  console.log(`Question: ${primeNumber}`);
+  if (!isPrime(primeNumber)) {
     correctAnswer = 'no';
   } else {
     correctAnswer = 'yes';
@@ -26,6 +26,6 @@ do{
     break;
   }
 } while (pointsForCycle < 3);
-if (pointsForCycle === 3){
-  console.log (`Congratulations, ${userName}!`);
+if (pointsForCycle === 3) {
+  console.log(`Congratulations, ${userName}!`);
 }
