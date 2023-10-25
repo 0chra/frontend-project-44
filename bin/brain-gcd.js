@@ -8,15 +8,18 @@ const userName = readlineSync.question('May I have your name? ');
 console.log(`Hello, ${userName}!`);
 console.log('Find the greatest common divisor of given numbers.');
 function nod() {
-  let pointsForNOD = arguments[0]
-  for (let pointsFor = 1; pointsFor < arguments.length; pointsFor += 1) {
-    let pointsComparison = arguments[pointsFor];
-    while (pointsForNOD && pointsComparison) {
-      pointsForNOD > pointsComparison ? pointsForNOD %= pointsComparison : pointsComparison %= pointsForNOD;
+  const arg =  arguments[0];
+  const argLenght = arguments.length;
+  let pointsNOD = arg;
+  for (let pointsFor = 1; pointsFor < argLenght; pointsFor += 1) {
+    const argPoints = arguments[pointsFor];
+    let pointsComparison = argPoints;
+    while (pointsNOD && pointsComparison) {
+      pointsNOD > pointsComparison ? pointsNOD %= pointsComparison : pointsComparison %= pointsNOD;
     }
-    pointsForNOD += pointsComparison;
+    pointsNOD += pointsComparison;
   }
-  return pointsForNOD;
+  return pointsNOD;
 }
 do {
   const numbers1 = number(1, 100);
