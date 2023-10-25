@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import { number } from './system_functions/functionofRandom.js';
-import { isPrime } from './system_functions/functionIsPrime.js';
+import number from './system_functions/functionofRandom.js';
+import isPrime from './system_functions/functionIsPrime.js';
 
 let pointsForCycle = 0;
 let correctAnswer = 0;
