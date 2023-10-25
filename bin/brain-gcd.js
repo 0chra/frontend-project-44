@@ -12,7 +12,7 @@ function nod() {
   let pointsFor = 0;
   for (pointsForNOD = arguments[0], pointsFor = 1; pointsFor < arguments.length; pointsFor += 1) {
     let pointsForComparison = arguments[pointsFor];
-    while (pointsForNOD && x) {
+    while (pointsForNOD && pointsForComparison) {
       pointsForNOD > pointsForComparison ? pointsForNOD %= pointsForComparison : pointsForComparison %= pointsForNOD;
     }
     pointsForNOD += pointsForComparison;
