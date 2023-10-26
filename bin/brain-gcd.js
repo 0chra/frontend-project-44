@@ -16,7 +16,7 @@ function nod(...theArgs) {
     let pointsComparison = argPoints;
     while (pointsNOD && pointsComparison) {
       pointsNOD > pointsComparison ? pointsNOD %= pointsComparison : pointsComparison %= pointsNOD;
-    };
+    }
     pointsNOD += pointsComparison;
   }
   return pointsNOD;
