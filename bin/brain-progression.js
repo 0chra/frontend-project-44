@@ -17,7 +17,7 @@ function array() {
     result[i] = result[i - 1] + step;
   }
   return result;
-};
+}
 do {
   const arr = array();
   const index = Math.abs(arrayLenght - number(1, 9));

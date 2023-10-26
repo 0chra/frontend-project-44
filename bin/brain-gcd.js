@@ -7,16 +7,16 @@ console.log('Welcome to the Brain Games!');
 const userName = readlineSync.question('May I have your name? ');
 console.log(`Hello, ${userName}!`);
 console.log('Find the greatest common divisor of given numbers.');
-function nod() {
-  const arg =  arguments[0];
-  const argLenght = arguments.length;
+function nod(...theArgs) {
+  const arg = theArgs[0];
+  const argLenght = theArgs.length;
   let pointsNOD = arg;
   for (let pointsFor = 1; pointsFor < argLenght; pointsFor += 1) {
-    const argPoints = arguments[pointsFor];
+    const argPoints = theArgs[pointsFor];
     let pointsComparison = argPoints;
     while (pointsNOD && pointsComparison) {
       pointsNOD > pointsComparison ? pointsNOD %= pointsComparison : pointsComparison %= pointsNOD;
-    }
+    };
     pointsNOD += pointsComparison;
   }
   return pointsNOD;
