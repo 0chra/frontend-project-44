@@ -5,7 +5,11 @@ export default function brainEven() {
   const randomNumber = number(1, 100);
   let trueAnswer = '';
   const question = randomNumber;
-  randomNumber % 2 === 0 ? trueAnswer = 'yes' : trueAnswer = 'no';
+  if (randomNumber % 2 === 0) {
+    trueAnswer = 'yes'; 
+  } else {
+    trueAnswer = 'no';
+  }
   return [trueAnswer, question];
 }
 engine('Answer "yes" if the number is even, otherwise answer "no".', brainEven);

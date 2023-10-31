@@ -5,16 +5,19 @@ export default function brainGcd() {
   function nod(...theArgs) {
     const arg = theArgs[0];
     const argLenght = theArgs.length;
-    let pointsNOD = arg;
+    let pointNOD = arg;
     for (let pointsFor = 1; pointsFor < argLenght; pointsFor += 1) {
       const argPoints = theArgs[pointsFor];
       let pointsComparison = argPoints;
-      while (pointsNOD && pointsComparison) {
-        pointsNOD > pointsComparison ? pointsNOD %= pointsComparison : pointsComparison %= pointsNOD;
+      while (pointNOD && pointsComparison) {
+        if (pointNOD > pointsComparison) {
+        pointNOD %= pointsComparison;
+      } else {
+        pointsComparison %= pointNOD;
       }
-    pointsNOD += pointsComparison;
+      pointNOD += pointsComparison;
     }
-    return pointsNOD;
+    return pointNOD;
   }
   const numbers1 = number(1, 100);
   const numbers2 = number(1, 100);
