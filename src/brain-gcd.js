@@ -11,9 +11,10 @@ export default function brainGcd() {
       let pointsComparison = argPoints;
       while (pointNOD && pointsComparison) {
         if (pointNOD > pointsComparison) {
-        pointNOD %= pointsComparison;
-      } else {
-        pointsComparison %= pointNOD;
+          pointNOD %= pointsComparison;
+        } else {
+          pointsComparison %= pointNOD;
+        }
       }
       pointNOD += pointsComparison;
     }

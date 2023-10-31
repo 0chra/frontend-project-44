@@ -6,7 +6,7 @@ export default function brainEven() {
   let trueAnswer = '';
   const question = randomNumber;
   if (randomNumber % 2 === 0) {
-    trueAnswer = 'yes'; 
+    trueAnswer = 'yes';
   } else {
     trueAnswer = 'no';
   }
