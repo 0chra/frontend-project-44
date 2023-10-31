@@ -1,30 +1,11 @@
-#!/usr/bin/env node
-import readlineSync from 'readline-sync';
 import number from './system_functions/functionofRandom.js';
+import engine from './index.js';
 
 export default function brainEven() {
-let pointsForCycle = 0;
-console.log('Welcome to the Brain Games!');
-const userName = readlineSync.question('May I have your name? ');
-console.log(`Hello, ${userName}!`);
-console.log('Answer "yes" if the number is even, otherwise answer "no".');
-do {
-  const numbers = number(1, 100);
-  console.log(`Question: ${numbers}`);
-  const userAnswer = readlineSync.question('Your answer: ');
-  if (numbers % 2 === 0 && userAnswer === 'yes') {
-    pointsForCycle += 1;
-    console.log('Correct!');
-  } else if (numbers % 2 !== 0 && userAnswer === 'no') {
-    pointsForCycle += 1;
-    console.log('Correct!');
-  } else {
-    const trueAnswer = userAnswer === 'no' ? 'yes' : 'no';
-    console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${trueAnswer}'. \nLet's try again, ${userName}!`);
-    break;
-  }
-} while (pointsForCycle < 3);
-if (pointsForCycle === 3) {
-  console.log(`Congratulations, ${userName}!`);
+  const randomNumber = number(1, 100);
+  let trueAnswer = '';
+  const question = randomNumber;
+  randomNumber % 2 === 0 ? trueAnswer = 'yes' : trueAnswer = 'no' ;
+  return [trueAnswer, question];
 }
-};
+engine('Answer "yes" if the number is even, otherwise answer "no".', brainEven);
