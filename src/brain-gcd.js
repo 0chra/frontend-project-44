@@ -5,7 +5,7 @@ function nod(firstNumber, secondNumber) {
   if (secondNumber > firstNumber) {
     return nod(secondNumber, firstNumber);
   }
-  if (!secondNumber){
+  if (!secondNumber) {
     return firstNumber;
   }
   return nod(secondNumber, firstNumber % secondNumber);
