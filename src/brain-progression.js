@@ -20,6 +20,6 @@ export default function brainProgression() {
   const string = String(arr.join(' '));
   const question = string;
   const trueAnswer = hiddenObj;
-  return [trueAnswer, question]; 
-};
+  return [trueAnswer, question];
+}
 engine('What number is missing in the progression?', brainProgression);

@@ -12,6 +12,6 @@ export default function brainPrime() {
   } else {
     trueAnswer = 'yes';
   }
-  return[trueAnswer, question];
-};
+  return [trueAnswer, question];
+}
 engine('Answer "yes" if given number is prime. Otherwise answer "no".', brainPrime);

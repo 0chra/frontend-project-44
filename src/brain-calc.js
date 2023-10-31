@@ -2,7 +2,7 @@ import number from './system_functions/functionofRandom.js';
 import randomSymbols from './system_functions/functionRandomSymblos.js';
 import engine from './index.js';
 
-export default function brainCalc(){
+export default function brainCalc() {
   let trueAnswer = 0;
   const symbols = ['-', '+', '*'];
   const numbers1 = number(1, 100);
@@ -18,10 +18,10 @@ export default function brainCalc(){
       break;
     case '*':
       trueAnswer = numbers1 * numbers2;
-        break;
+      break;
     default:
       break;
   }
-  return[trueAnswer, question];
+  return [trueAnswer, question];
 }
 engine('What is the result of the expression?', brainCalc);

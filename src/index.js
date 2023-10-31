@@ -7,7 +7,7 @@ export default function engine(gameDescription, brainGame) {
   console.log(gameDescription);
   const stepsCount = 3;
   for (let i = 0; i < stepsCount; i += 1) {
-    const[trueAnswer, question] = brainGame();
+    const [trueAnswer, question] = brainGame();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (trueAnswer.toString() !== userAnswer) {
