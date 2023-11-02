@@ -1,8 +1,13 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/0chra/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/0chra/frontend-project-44/actions)
-Brain-even: https://asciinema.org/a/Z2G5PkWW7R1wgwWbBZH7WSQ4H
-Brain-calc: https://asciinema.org/a/FUERFsbe3vtmTeJFLLToR5wyP
-Brain-gcd:  https://asciinema.org/a/CuC7AsKXMnG4hNIWYBjtTHgsz
-Brain-progression: https://asciinema.org/a/d8qE1ahR763zp8HxdKRZMxqeQ
-Brain-prime: https://asciinema.org/a/fXJYVML1Cuq0vefjaGQS1WPRn
-All Brain-games: https://asciinema.org/a/Jwqybf1KBc7qTXwYGOMJlhOgC
+All Brain-games: [![asciicast](https://asciinema.org/a/5sJJPSVPCK0n6wUUavvtKdBv9.svg)](https://asciinema.org/a/5sJJPSVPCK0n6wUUavvtKdBv9)
+Игра: "Проверка на чётность" (brain-even).
+Необходимо реализовать игру "Проверка на чётность". Суть игры в следующем: пользователю показывается случайное число. И ему нужно ответить yes, если число чётное, или no — если нечётное.
+Игра: "Калькулятор" (brain-calc).
+Суть игры в следующем: пользователю показывается случайное математическое выражение, например 35 + 16, которое нужно вычислить и записать правильный ответ.
+Игра "НОД" (brain-gcd).
+Необходимо реализовать игру "наибольший общий делитель (НОД)". Суть игры в следующем: пользователю показывается два случайных числа, например, 25 50. Пользователь должен вычислить и ввести наибольший общий делитель этих чисел.
+Игра "Арифметическая прогрессия" (brain- progression).
+Суть игры: игроку показывается ряд чисел, образующий арифметическую прогрессию, заменив любое из чисел двумя точками. Игрок должен определить это число.
+Игра "Простое ли число?" (brain-prime).
+Суть игры: игроку показывается число и задаётся вопрос: "Является ли это число простым?". ПОльзователь должен отвтеить "да" или "нет".
