@@ -1,7 +1,7 @@
 import getRandomNumber from './functionofRandom.js';
 import engine from './index.js';
 
-function calculation(getRandomSymbol){
+function calculation(getRandomSymbol) {
   let trueAnswer = 0;
   const numbers1 = getRandomNumber(1, 100);
   const numbers2 = getRandomNumber(1, 100);
@@ -15,6 +15,8 @@ function calculation(getRandomSymbol){
     case '*':
       trueAnswer = numbers1 * numbers2;
       break;
+    default:
+      throw new Error(`Unknown order state: '${getRandomSymbol}'!`);
   }
   const question = (`${numbers1} ${getRandomSymbol} ${numbers2}`);
   return [trueAnswer, question];

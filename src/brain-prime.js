@@ -21,12 +21,12 @@ function isPrime(number) {
   }
   return true;
 }
-function primeNumber() {
+function isPrimeNumber() {
   const primeNumber = getRandomNumber(1, 100);
   const question = primeNumber;
-  const trueAnswer = !isPrime(primeNumber)? 'no' : 'yes';
+  const trueAnswer = !isPrime(primeNumber) ? 'no' : 'yes';
   return [trueAnswer, question];
 }
 export default function brainPrime() {
-  engine('Answer "yes" if given number is prime. Otherwise answer "no".', primeNumber);
+  engine('Answer "yes" if given number is prime. Otherwise answer "no".', isPrimeNumber);
 }
