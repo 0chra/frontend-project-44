@@ -1,6 +1,7 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/0chra/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/0chra/frontend-project-44/actions)
-All Brain-games: [![asciicast](https://asciinema.org/a/5sJJPSVPCK0n6wUUavvtKdBv9.svg)](https://asciinema.org/a/5sJJPSVPCK0n6wUUavvtKdBv9)
+Игры разума(brain-games).
+пример работы всех игр: [![asciicast](https://asciinema.org/a/5sJJPSVPCK0n6wUUavvtKdBv9.svg)](https://asciinema.org/a/5sJJPSVPCK0n6wUUavvtKdBv9)
 Игра: "Проверка на чётность" (brain-even).
 Необходимо реализовать игру "Проверка на чётность". Суть игры в следующем: пользователю показывается случайное число. И ему нужно ответить yes, если число чётное, или no — если нечётное.
 Игра: "Калькулятор" (brain-calc).

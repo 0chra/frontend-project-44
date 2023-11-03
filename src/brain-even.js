@@ -1,8 +1,8 @@
-import number from './system_functions/functionofRandom.js';
+import getRandomNumber from './functionofRandom.js';
 import engine from './index.js';
 
-export default function brainEven() {
-  const randomNumber = number(1, 100);
+function isEven() {
+  const randomNumber = getRandomNumber(1, 100);
   let trueAnswer = '';
   const question = randomNumber;
   if (randomNumber % 2 === 0) {
@@ -12,4 +12,6 @@ export default function brainEven() {
   }
   return [trueAnswer, question];
 }
-engine('Answer "yes" if the number is even, otherwise answer "no".', brainEven);
+export default function brainEven() {
+  engine('Answer "yes" if the number is even, otherwise answer "no".', isEven);
+}

@@ -1,10 +1,10 @@
 import engine from './index.js';
-import number from './system_functions/functionofRandom.js';
+import getRandomNumber from './functionofRandom.js';
 
-export default function brainProgression() {
-  const firstNumber = number(1, 100);
-  const step = number(1, 10);
-  const arrayLenght = number(5, 10);
+function progression() {
+  const firstNumber = getRandomNumber(1, 100);
+  const step = getRandomNumber(1, 10);
+  const arrayLenght = getRandomNumber(5, 10);
   const result = [];
   function array() {
     result[0] = firstNumber;
@@ -14,7 +14,7 @@ export default function brainProgression() {
     return result;
   }
   const arr = array();
-  const index = Math.abs(arrayLenght - number(1, 9));
+  const index = Math.abs(arrayLenght - getRandomNumber(1, 9));
   const hiddenObj = arr[index];
   arr[index] = '..';
   const string = String(arr.join(' '));
@@ -22,4 +22,6 @@ export default function brainProgression() {
   const trueAnswer = hiddenObj;
   return [trueAnswer, question];
 }
-engine('What number is missing in the progression?', brainProgression);
+export default function brainProgression() {
+  engine('What number is missing in the progression?', progression);
+}

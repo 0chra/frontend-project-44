@@ -1,12 +1,16 @@
-import number from './system_functions/functionofRandom.js';
-import randomSymbols from './system_functions/functionRandomSymblos.js';
+import getRandomNumber from './functionofRandom.js';
 import engine from './index.js';
 
-export default function brainCalc() {
+function randomSymbols(symb) {
+  const randomIndex = Math.floor(Math.random() * symb.length);
+  const item = symb[randomIndex];
+  return item;
+}
+function calculation() {
   let trueAnswer = 0;
   const symbols = ['-', '+', '*'];
-  const numbers1 = number(1, 100);
-  const numbers2 = number(1, 100);
+  const numbers1 = getRandomNumber(1, 100);
+  const numbers2 = getRandomNumber(1, 100);
   const symbol = randomSymbols(symbols);
   const question = (`${numbers1} ${symbol} ${numbers2}`);
   switch (symbol) {
@@ -19,9 +23,9 @@ export default function brainCalc() {
     case '*':
       trueAnswer = numbers1 * numbers2;
       break;
-    default:
-      break;
   }
   return [trueAnswer, question];
 }
-engine('What is the result of the expression?', brainCalc);
+export default function brainCalc() {
+  engine('What is the result of the expression?', calculation);
+}

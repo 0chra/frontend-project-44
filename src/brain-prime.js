@@ -1,17 +1,32 @@
 #!/usr/bin/env node
 import engine from './index.js';
-import number from './system_functions/functionofRandom.js';
-import isPrime from './system_functions/functionIsPrime.js';
+import getRandomNumber from './functionofRandom.js';
 
-export default function brainPrime() {
-  let trueAnswer = '';
-  const primeNumber = number(1, 100);
-  const question = primeNumber;
-  if (!isPrime(primeNumber)) {
-    trueAnswer = 'no';
-  } else {
-    trueAnswer = 'yes';
+function isPrime(number) {
+  if (number === 1) {
+    const isTrue = false;
+    return isTrue;
   }
+  if (number === 2) {
+    const isTrue = true;
+    return isTrue;
+  }
+  if (number !== 1 && number !== 2) {
+    for (let x = 2; x < number; x += 1) {
+      if (number % x === 0) {
+        const isTrue = false;
+        return isTrue;
+      }
+    }
+  }
+  return true;
+}
+function primeNumber() {
+  const primeNumber = getRandomNumber(1, 100);
+  const question = primeNumber;
+  const trueAnswer = !isPrime(primeNumber)? 'no' : 'yes';
   return [trueAnswer, question];
 }
-engine('Answer "yes" if given number is prime. Otherwise answer "no".', brainPrime);
+export default function brainPrime() {
+  engine('Answer "yes" if given number is prime. Otherwise answer "no".', primeNumber);
+}
