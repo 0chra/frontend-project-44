@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import engine from './index.js';
-import getRandomNumber from './functionofRandom.js';
+import getRandomNumber from './getRandomNumber.js';
 
 function isPrime(number) {
   if (number === 1) {
@@ -21,12 +21,12 @@ function isPrime(number) {
   }
   return true;
 }
-function isPrimeNumber() {
+function getData() {
   const primeNumber = getRandomNumber(1, 100);
   const question = primeNumber;
   const trueAnswer = !isPrime(primeNumber) ? 'no' : 'yes';
   return [trueAnswer, question];
 }
 export default function brainPrime() {
-  engine('Answer "yes" if given number is prime. Otherwise answer "no".', isPrimeNumber);
+  engine('Answer "yes" if given number is prime. Otherwise answer "no".', getData);
 }

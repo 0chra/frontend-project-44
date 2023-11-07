@@ -1,7 +1,7 @@
 import engine from './index.js';
 import getRandomNumber from './functionofRandom.js';
 
-function progression() {
+function getData() {
   const firstNumber = getRandomNumber(1, 100);
   const step = getRandomNumber(1, 10);
   const arrayLenght = getRandomNumber(5, 10);
@@ -23,5 +23,5 @@ function progression() {
   return [trueAnswer, question];
 }
 export default function brainProgression() {
-  engine('What number is missing in the progression?', progression);
+  engine('What number is missing in the progression?', getData);
 }

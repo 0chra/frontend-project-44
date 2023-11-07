@@ -1,5 +1,5 @@
 import engine from './index.js';
-import getRandomNumber from './functionofRandom.js';
+import getRandomNumber from './getRandomNumber.js';
 
 function nod(firstNumber, secondNumber) {
   if (secondNumber > firstNumber) {
@@ -10,7 +10,7 @@ function nod(firstNumber, secondNumber) {
   }
   return nod(secondNumber, firstNumber % secondNumber);
 }
-function isNod() {
+function getData() {
   const numbers1 = getRandomNumber(1, 100);
   const numbers2 = getRandomNumber(1, 100);
   const question = (`${numbers1} ${numbers2}`);
@@ -18,5 +18,5 @@ function isNod() {
   return [trueAnswer, question];
 }
 export default function brainGcd() {
-  engine('Find the greatest common divisor of given numbers.', isNod);
+  engine('Find the greatest common divisor of given numbers.', getData);
 }
