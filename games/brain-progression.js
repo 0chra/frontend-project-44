@@ -1,5 +1,5 @@
 import engine from './index.js';
-import getRandomNumber from './functionofRandom.js';
+import getRandomNumber from './getRandomNumber.js';
 
 function getData() {
   const firstNumber = getRandomNumber(1, 100);
