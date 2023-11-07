@@ -10,7 +10,7 @@ function calculation(numbers1, numbers2, symbol) {
     case '*':
       return numbers1 * numbers2;
     default:
-      throw new Error(`Unknown order state: '${getRandomSymbol}'!`);
+      throw new Error(`Unknown order state: '${calculation}'!`);
   }
 }
 function getData() {
